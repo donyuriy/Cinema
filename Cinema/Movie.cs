@@ -12,6 +12,5 @@ namespace Cinema
     {
         public int MovieId { get; set; }
         public string MovieName { get; set; }
-        public string MovieDirector { get; set; }
     }
 }

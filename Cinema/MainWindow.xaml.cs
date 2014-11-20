@@ -20,24 +20,34 @@ namespace Cinema
     /// </summary>
     public partial class MainWindow : Window
     {
-        SoldPlaces db = new SoldPlaces();
+        SoldPlacesDataContext db = new SoldPlacesDataContext();
         CinemaHallsRead CHallObj = new CinemaHallsRead();
-        Button[,] bt;
-        List<string[,]> h1;
-        int height = 40;
+        Button[,] bt;   // массив мест в зале
+        List<string[,]> h1; //список расположения кресел в залах
+        int height = 40;    //параметры мест(элементов) в зале(Button)
         int width = 40;
         public MainWindow()
         {
             InitializeComponent();
-            grdMain.Children.Clear();
             foreach (string item in CHallObj.GetHallList())
             {
                 cbCinemaHall.Items.Add(item);   //заполнение ComboBox имён залов
             }
             cbCinemaHall.SelectedIndex = 0;
             cbCinemaHall_SelectionChanged(null,null);   //вызов смены зала для отрисовки мест
-            var showTime = from st in db. select st;
-                 
+            //РАБОТА С БД-----------------------------------------
+            //ShowTime [] showtime = new ShowTime[10];
+            try
+            {
+                var x = (from a in db.Tickets select a).ToArray();
+            }
+            catch (Exception e)
+            {
+                errLbl.Content = e.Message;
+            }
+           
+            
+
         }
 
         private void OnLoad(object sender, RoutedEventArgs e)
@@ -50,10 +60,11 @@ namespace Cinema
             h1 = new List<string[,]>(CHallObj.ReadHallStructure());
             bt = new Button[h1[cbCinemaHall.SelectedIndex].GetLength(0), h1[cbCinemaHall.SelectedIndex].GetLength(1)];
             double x = 0, y = 0;
-
+            int numberToTagCounter = 0;
             for (int i = 0; i < bt.GetLength(0); i++)
             {
-                int counter = 0;
+
+                int columnCounter = 0;
                 for (int j = 0; j < bt.GetLength(1); j++)
                 {
                     if (Convert.ToInt32(h1[cbCinemaHall.SelectedIndex][i, j]) == 0)
@@ -65,12 +76,13 @@ namespace Cinema
                     }
                     if (Convert.ToInt32(h1[cbCinemaHall.SelectedIndex][i, j]) == 1)
                     {   //места помеченные "1" - первая ценовая категория
-                        counter++;
+                        columnCounter++;
+                        numberToTagCounter++;
                         bt[i, j] = new Button();
                         bt[i, j].Height = height;
                         bt[i, j].Width = width;
-                        bt[i, j].Content = counter.ToString();
-                        bt[i, j].Tag = i;
+                        bt[i, j].Content = columnCounter.ToString();
+                        bt[i, j].Tag = numberToTagCounter;
                         bt[i, j].Background = Brushes.Green;
                         y = i * height;
                         if (j == 0)
@@ -81,12 +93,13 @@ namespace Cinema
                     }
                     if (Convert.ToInt32(h1[cbCinemaHall.SelectedIndex][i, j]) == 2)
                     {   //места помеченные "2" - вторая ценовая категория
-                        counter++;
+                        columnCounter++;
+                        numberToTagCounter++;
                         bt[i, j] = new Button();
                         bt[i, j].Height = height;
                         bt[i, j].Width = width;
-                        bt[i, j].Content = counter.ToString();
-                        bt[i, j].Tag = i;
+                        bt[i, j].Content = columnCounter.ToString();
+                        bt[i, j].Tag = numberToTagCounter;
                         bt[i, j].Background = Brushes.Coral;
                         y = i * height;
                         if (j == 0)
@@ -95,9 +108,6 @@ namespace Cinema
                         bt[i, j].Margin = new Thickness(x, y, 0, 0);
                         bt[i, j].Click += Button_Click;
                     }
-                    else
-                    {
-                    }
                 }
             }
             for (int i = 0; i < bt.GetLength(0); i++)
@@ -105,8 +115,8 @@ namespace Cinema
                 for (int j = 0; j < bt.GetLength(1); j++)
                 {
                     if (bt[i, j] == null)
-                        continue;
-                    grdMain.Children.Add(bt[i, j]);
+                        continue;                   //если на месте элемента null
+                    grdMain.Children.Add(bt[i, j]); //добавление мест на форму
                 }
             }
         }
@@ -114,6 +124,7 @@ namespace Cinema
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             (sender as Button).IsEnabled = false;
+           // MessageBox.Show("button " + (sender as Button).Content, "Tag " + (sender as Button).Tag);
         }
 
         private void cbMovie_SelectionChanged(object sender, SelectionChangedEventArgs e)

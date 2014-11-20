@@ -13,5 +13,6 @@
         <Label Content="Зал" HorizontalAlignment="Right" Margin="0,34,10,381" Width="120" HorizontalContentAlignment="Center" RenderTransformOrigin="0.483,0.038"/>
         <Label Content="Время начала" HorizontalAlignment="Right" Margin="0,94,10,321" Width="120" HorizontalContentAlignment="Center"/>
         <Label Content="Фильм" HorizontalAlignment="Right" Margin="0,154,10,261" Width="120" HorizontalContentAlignment="Center"/>
+        <Label x:Name="errLbl" Content="Label" HorizontalAlignment="Left" Margin="10,22,0,0" VerticalAlignment="Top" Width="471"/>
     </Grid>
 </Window>

@@ -10,7 +10,7 @@ namespace Cinema
     [TableAttribute("CinemaHall")]
     class CinemaHall
     {
-        public int HallId { get; set; }
-        public string HallName { get; set; }
+        public int CinemaHallId { get; set; }
+        public string CinemaHallName { get; set; }
     }
 }

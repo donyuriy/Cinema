@@ -8,9 +8,12 @@ using System.Threading.Tasks;
 namespace Cinema
 {
     [TableAttribute("ShowTime")]
-    class ShTime
+    class ShowTime
     {
-        public int ShowTimeId { get; set; }
-        public DateTime ShowTime { get; set; }
+        public int ShowId { get; set; }
+        public string ShowName { get; set; }
+        public int CinemaHall { get; set; }
+        public int Movie { get; set; }
+        public DateTime ShTime { get; set; }
     }
 }

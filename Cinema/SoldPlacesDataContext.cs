@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Cinema
 {
-    class SoldPlaces : DbContext
+    public class SoldPlacesDataContext : DbContext
     {
-        public SoldPlaces()
+        public SoldPlacesDataContext()
             : base("CinemaDB")
         {       }
         public DbSet Tickets { get; set; }
