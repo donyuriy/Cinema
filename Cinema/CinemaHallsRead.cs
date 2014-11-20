@@ -43,10 +43,10 @@ namespace Cinema
                 {
                     using (StreamReader sr = new StreamReader(fs))                                  //StreamReader
                     {
-                        for (int i = 0; i < 2; i++)     //два прохода т.к. за 1й назначаем размерность массивов 
+                        for (int i = 0; i < 2; i++)     //два прохода т.к. за 1й определяем размерность массивов 
                         {                               // а за 2й считываем в него все значения
                             //если размеры массива уже установлены
-                            if (HallMass[cnt].GetLength(0) == resolutionX && HallMass[cnt].GetLength(1) == resolutionY) 
+                            if (HallMass[cnt].GetLength(0) == resolutionY && HallMass[cnt].GetLength(1) == resolutionX) 
                             {
                                 fs.Seek(0, SeekOrigin.Begin);
                                 for (int j = 0; j < HallMass[cnt].GetLength(0); j++)            //вычитываем места в зале
@@ -54,7 +54,6 @@ namespace Cinema
                                     string tempString = sr.ReadLine();                  //вычитываем по рядам
                                     for (int k = 0; k < HallMass[cnt].GetLength(1); k++)
                                     {
-                                        if (sr.EndOfStream) break;
                                         HallMass[cnt][j, k] = Convert.ToString(tempString[k]);   //познаково переносим в массив
                                     }
                                 }
@@ -70,7 +69,7 @@ namespace Cinema
 
                                 resolutionY = counter;                      //ширина
                                 counter = 0;
-                                HallMass[cnt] = new string[resolutionX, resolutionY];  //рабочие габариты применены к залу!
+                                HallMass[cnt] = new string[resolutionY, resolutionX];  //рабочие габариты применены к залу!
                             }
                         }
                     }
