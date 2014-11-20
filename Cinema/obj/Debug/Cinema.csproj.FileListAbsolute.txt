@@ -1,0 +1,66 @@
+D:\Don\Cinema\Cinema\bin\Debug\Cinema.exe.config
+D:\Don\Cinema\Cinema\obj\Debug\Cinema.csprojResolveAssemblyReference.cache
+D:\Don\Cinema\Cinema\obj\Debug\MainWindow.baml
+D:\Don\Cinema\Cinema\obj\Debug\MainWindow.g.cs
+D:\Don\Cinema\Cinema\obj\Debug\App.g.cs
+D:\Don\Cinema\Cinema\obj\Debug\Cinema_Content.g.cs
+D:\Don\Cinema\Cinema\obj\Debug\Cinema_MarkupCompile.cache
+D:\Don\Cinema\Cinema\obj\Debug\Cinema.g.resources
+D:\Don\Cinema\Cinema\obj\Debug\Cinema.Properties.Resources.resources
+D:\Don\Cinema\Cinema\obj\Debug\Cinema.csproj.GenerateResource.Cache
+D:\Don\Cinema\Cinema\bin\Debug\CinemaDB.sdf
+D:\Don\Cinema\Cinema\bin\Debug\Cinema.exe
+D:\Don\Cinema\Cinema\bin\Debug\Cinema.pdb
+D:\Don\Cinema\Cinema\bin\Debug\EntityFramework.dll
+D:\Don\Cinema\Cinema\bin\Debug\EntityFramework.SqlServer.dll
+D:\Don\Cinema\Cinema\bin\Debug\EntityFramework.SqlServerCompact.dll
+D:\Don\Cinema\Cinema\bin\Debug\System.Data.SqlServerCe.dll
+D:\Don\Cinema\Cinema\bin\Debug\EntityFramework.xml
+D:\Don\Cinema\Cinema\bin\Debug\EntityFramework.SqlServer.xml
+D:\Don\Cinema\Cinema\bin\Debug\EntityFramework.SqlServerCompact.xml
+D:\Don\Cinema\Cinema\obj\Debug\Cinema.exe
+D:\Don\Cinema\Cinema\obj\Debug\Cinema.pdb
+D:\Documents\Visual Studio 2010\Projects\Cinema\Cinema\bin\Debug\Cinema.exe.config
+D:\Documents\Visual Studio 2010\Projects\Cinema\Cinema\obj\Debug\Cinema.exe
+D:\Documents\Visual Studio 2010\Projects\Cinema\Cinema\obj\Debug\Cinema.pdb
+D:\Documents\Visual Studio 2010\Projects\Cinema\Cinema\bin\Debug\CinemaDB.sdf
+D:\Documents\Visual Studio 2010\Projects\Cinema\Cinema\bin\Debug\Cinema.exe
+D:\Documents\Visual Studio 2010\Projects\Cinema\Cinema\bin\Debug\Cinema.pdb
+D:\Documents\Visual Studio 2010\Projects\Cinema\Cinema\bin\Debug\EntityFramework.dll
+D:\Documents\Visual Studio 2010\Projects\Cinema\Cinema\bin\Debug\EntityFramework.SqlServer.dll
+D:\Documents\Visual Studio 2010\Projects\Cinema\Cinema\bin\Debug\EntityFramework.SqlServerCompact.dll
+D:\Documents\Visual Studio 2010\Projects\Cinema\Cinema\bin\Debug\System.Data.SqlServerCe.dll
+D:\Documents\Visual Studio 2010\Projects\Cinema\Cinema\bin\Debug\EntityFramework.xml
+D:\Documents\Visual Studio 2010\Projects\Cinema\Cinema\bin\Debug\EntityFramework.SqlServer.xml
+D:\Documents\Visual Studio 2010\Projects\Cinema\Cinema\bin\Debug\EntityFramework.SqlServerCompact.xml
+D:\Documents\Visual Studio 2010\Projects\Cinema\Cinema\obj\Debug\Cinema.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2010\Projects\Cinema\Cinema\obj\Debug\MainWindow.baml
+D:\Documents\Visual Studio 2010\Projects\Cinema\Cinema\obj\Debug\MainWindow.g.cs
+D:\Documents\Visual Studio 2010\Projects\Cinema\Cinema\obj\Debug\App.g.cs
+D:\Documents\Visual Studio 2010\Projects\Cinema\Cinema\obj\Debug\Cinema_Content.g.cs
+D:\Documents\Visual Studio 2010\Projects\Cinema\Cinema\obj\Debug\Cinema_MarkupCompile.cache
+D:\Documents\Visual Studio 2010\Projects\Cinema\Cinema\obj\Debug\Cinema.g.resources
+D:\Documents\Visual Studio 2010\Projects\Cinema\Cinema\obj\Debug\Cinema.Properties.Resources.resources
+D:\Documents\Visual Studio 2010\Projects\Cinema\Cinema\obj\Debug\Cinema.csproj.GenerateResource.Cache
+E:\NETProjects\Cinema\Cinema\bin\Debug\Cinema.exe.config
+E:\NETProjects\Cinema\Cinema\obj\Debug\Cinema.exe
+E:\NETProjects\Cinema\Cinema\obj\Debug\Cinema.pdb
+E:\NETProjects\Cinema\Cinema\bin\Debug\CinemaDB.sdf
+E:\NETProjects\Cinema\Cinema\bin\Debug\Cinema.exe
+E:\NETProjects\Cinema\Cinema\bin\Debug\Cinema.pdb
+E:\NETProjects\Cinema\Cinema\bin\Debug\EntityFramework.dll
+E:\NETProjects\Cinema\Cinema\bin\Debug\EntityFramework.SqlServer.dll
+E:\NETProjects\Cinema\Cinema\bin\Debug\EntityFramework.SqlServerCompact.dll
+E:\NETProjects\Cinema\Cinema\bin\Debug\System.Data.SqlServerCe.dll
+E:\NETProjects\Cinema\Cinema\bin\Debug\EntityFramework.xml
+E:\NETProjects\Cinema\Cinema\bin\Debug\EntityFramework.SqlServer.xml
+E:\NETProjects\Cinema\Cinema\bin\Debug\EntityFramework.SqlServerCompact.xml
+E:\NETProjects\Cinema\Cinema\obj\Debug\Cinema.csprojResolveAssemblyReference.cache
+E:\NETProjects\Cinema\Cinema\obj\Debug\MainWindow.baml
+E:\NETProjects\Cinema\Cinema\obj\Debug\MainWindow.g.cs
+E:\NETProjects\Cinema\Cinema\obj\Debug\App.g.cs
+E:\NETProjects\Cinema\Cinema\obj\Debug\Cinema_Content.g.cs
+E:\NETProjects\Cinema\Cinema\obj\Debug\Cinema_MarkupCompile.cache
+E:\NETProjects\Cinema\Cinema\obj\Debug\Cinema.g.resources
+E:\NETProjects\Cinema\Cinema\obj\Debug\Cinema.Properties.Resources.resources
+E:\NETProjects\Cinema\Cinema\obj\Debug\Cinema.csproj.GenerateResource.Cache
