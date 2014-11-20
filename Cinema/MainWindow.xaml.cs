@@ -39,7 +39,11 @@ namespace Cinema
             //ShowTime [] showtime = new ShowTime[10];
             try
             {
-                var x = (from a in db.Tickets select a).ToArray();
+                //var x = (from a in db.Tickets select a).ToArray();
+                foreach (Movie  item in db.Tickets)
+                {
+                    cbMovie.Items.Add(item.MovieName);
+                }
             }
             catch (Exception e)
             {
