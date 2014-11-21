@@ -22,13 +22,15 @@ namespace Cinema
     {
         SoldPlacesDataContext db = new SoldPlacesDataContext();
         CinemaHallsRead CHallObj = new CinemaHallsRead();
-        Button[,] bt;   // массив мест в зале
-        List<string[,]> h1; //список расположения кресел в залах
-        int height = 40;    //параметры мест(элементов) в зале(Button)
+        Button[,] bt;           // массив мест в зале
+        List<string[,]> h1;     //список расположения кресел в залах
+        int height = 40;        //параметры мест(элементов) в зале(Button)
         int width = 40;
         public MainWindow()
         {
             InitializeComponent();
+            this.Height = 600;
+            this.Width = 1200;
             foreach (string item in CHallObj.GetHallList())
             {
                 cbCinemaHall.Items.Add(item);   //заполнение ComboBox имён залов
@@ -37,23 +39,23 @@ namespace Cinema
             cbCinemaHall_SelectionChanged(null,null);   //вызов смены зала для отрисовки мест
 
 
-            //РАБОТА С БД-----------------------------------------
+            //РАБОТА С БД------ЭТА ЧАСТЬ КОДА НЕ РАБОТАЕТ ИЛИ ВЫДАЁТ ОШИБКУ!!!----------------------
            
-            try
-            {
-                foreach (Movie item in db.Movie)
-                {
-                    cbMovie.Items.Add(item.MovieName.ToString());
-                }
-                foreach (ShTime item in db.STime)
-                {
-                    cbShowTime.Items.Add(item.ShowName.ToString());
-                }
-            }
-            catch (Exception e)
-            {
-                errLbl.Content = e.Message;
-            }
+            //try
+            //{
+            //    foreach (Movie item in db.Movie)
+            //    {
+            //        cbMovie.Items.Add(item.MovieName.ToString());
+            //    }
+            //    foreach (ShTime item in db.STime)
+            //    {
+            //        cbShowTime.Items.Add(item.ShowName.ToString());
+            //    }
+            //}
+            //catch (Exception e)
+            //{
+            //    errLbl.Content = e.Message;
+            //}
 
         }
 
