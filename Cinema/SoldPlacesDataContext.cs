@@ -7,11 +7,16 @@ using System.Threading.Tasks;
 
 namespace Cinema
 {
-    public class SoldPlacesDataContext : DbContext
+    class SoldPlacesDataContext : DbContext
     {
         public SoldPlacesDataContext()
             : base("CinemaDB")
         {       }
-        public DbSet Tickets { get; set; }
+
+        public DbSet<ShTime> STime { get; set; }
+        public DbSet<CinemaHall> CHall { get; set; }
+        public DbSet<Movie> Movie { get; set; }
+        public DbSet<SoldPlaces> SPlaces { get; set; }
+
     }
 }

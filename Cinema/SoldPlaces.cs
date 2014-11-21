@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Cinema
 {
-    [TableAttribute("ShowTime")]
-    class ShTime
+    [TableAttribute("SoldPlaces")]
+    class SoldPlaces
     {
-        public int ShowId { get; set; }
-        public string ShowName { get; set; }
-        public int CinemaHall { get; set; }
+        public int PlaceId { get; set; }
+        public int PlaceNumber { get; set; }
+        public int Hall { get; set; }
+        public int ShowTime { get; set; }
         public int Movie { get; set; }
-        public DateTime ShowTime { get; set; }
     }
 }

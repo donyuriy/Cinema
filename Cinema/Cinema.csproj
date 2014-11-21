@@ -83,6 +83,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="CinemaHallsRead.cs" />
+    <Compile Include="SoldPlaces.cs" />
     <Compile Include="SoldPlacesDataContext.cs" />
     <Compile Include="ShowTime.cs" />
     <Page Include="MainWindow.xaml">

@@ -35,22 +35,25 @@ namespace Cinema
             }
             cbCinemaHall.SelectedIndex = 0;
             cbCinemaHall_SelectionChanged(null,null);   //вызов смены зала для отрисовки мест
+
+
             //РАБОТА С БД-----------------------------------------
-            //ShowTime [] showtime = new ShowTime[10];
+           
             try
             {
-                //var x = (from a in db.Tickets select a).ToArray();
-                foreach (Movie  item in db.Tickets)
+                foreach (Movie item in db.Movie)
                 {
-                    cbMovie.Items.Add(item.MovieName);
+                    cbMovie.Items.Add(item.MovieName.ToString());
+                }
+                foreach (ShTime item in db.STime)
+                {
+                    cbShowTime.Items.Add(item.ShowName.ToString());
                 }
             }
             catch (Exception e)
             {
                 errLbl.Content = e.Message;
             }
-           
-            
 
         }
 
@@ -128,7 +131,6 @@ namespace Cinema
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             (sender as Button).IsEnabled = false;
-           // MessageBox.Show("button " + (sender as Button).Content, "Tag " + (sender as Button).Tag);
         }
 
         private void cbMovie_SelectionChanged(object sender, SelectionChangedEventArgs e)
